@@ -4,7 +4,7 @@ body{
 }
 
 /* editing the layout of header */
-header{
+#header{
     display: flex;
     z-index: 999;
     position: fixed;
@@ -12,36 +12,34 @@ header{
     width: 100%;
 }
 
-header>div{
+#header>div{
     padding-right: 25em;
 }
 
 /* changing the logo size */
-header > div > a > img{
+#header > div > a > img{
     height: 7em;
 }
 
-header > nav > menu{
+#header > nav > menu{
     display: flex;
     list-style: none;
 }
 
-header > nav > menu > li{
+#header > nav > menu > li{
     margin: 0% 10%;
 }
 
-header > nav > menu > li > a {
+#header > nav > menu > li > a {
     padding: 0% 10%;
 }
 
 /* coverting cursor into pointer so that user can see the link */
-header > nav > menu > li{
+#header > nav > menu > li{
     cursor: pointer;
 }
 
-section.firstsection{
-    margin-top: 100px;
-}
+
 
 /* styling pop out form */
 #form
@@ -73,6 +71,10 @@ section.firstsection{
 #closebutton{
     width: 1em;
     cursor: pointer;
+}
+
+.mainleft-section >p {
+    padding-top: 150px;
 }
 
 

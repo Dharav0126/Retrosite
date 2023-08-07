@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta name="description" content="homepage of pizza website">
+    <title>Home</title>
+    <!-- Linking the required jqueries -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- linking the javascript file -->
+    <script type="text/javascript" src="./Script/script.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <div id="form">
+            <div id="subform">
+                <div class="closebutton">
+                    <h2>WE'RE ALL EARS</h2>
+                    <button onclick="closeForm()">close</button>
+                </div>
+                <form>
+                    
+                </form>
+            </div>
+        </div>
+        <section class="firstsection">
+            <div class="mainleft-section">
+                <p>WHERE SOUND AND CREATIVITY HARMONIZE</p>
+            </div>
+            <div class="mainright-section">
+                <img src="./img/boombox.jpg" alt="boombox image">
+            </div>
+        </section>
+        <div class="heading">
+            <h5>Services</h5>
+            <!-- doing type js reffered by porfolio website showed in class -->
+            <div id="element1"></div>
+            <div id="element2"></div>
+            <div id="element3"></div>
+            <!-- type js use -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+            <!-- Setup and start animation! -->
+            <script>
+                var typed = new Typed('#element1', {
+                    strings: ['<i>Music Composition</i>', '<i>Music Licensing</i>'],
+                    typeSpeed: 100,
+                });
+                var typed = new Typed('#element2', {
+                    strings: ['<i>Video Composition</i>', '<i>Sound Design</i>'],
+                    typeSpeed: 100,
+                });
+                var typed = new Typed('#element3', {
+                    strings: ['<i>Video Casting</i>'],
+                    typeSpeed: 100,
+                });
+            </script>
+        </div>
+        <section class="secondsection">
+            <div class="1stvideo">
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CdFIKU53KEU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share &autoplay=1"
+                    allowfullscreen></iframe>
+                
+            </div>
+            <div class="2ndvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/a1UYHvA2uoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="thirdsection">
+            <div class="3rdvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8yvEYKRF5IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="4thvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S5Y8tFQ01OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="fourthsection">
+            <div class="5thvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5_ncIrrM8S0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="6thvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JgCuZvA6ybw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+</body>
+
+</html>

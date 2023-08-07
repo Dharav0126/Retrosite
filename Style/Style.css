@@ -6,14 +6,14 @@ body{
 /* editing the layout of header */
 #header{
     display: flex;
-    z-index: 999;
     position: fixed;
-    justify-content: space-between;
     width: 100%;
+    margin-top: -13%;
+    background-color: #f8f8f8;
 }
 
 #header>div{
-    padding-right: 25em;
+    padding-right: 28em;
 }
 
 /* changing the logo size */
@@ -21,17 +21,25 @@ body{
     height: 7em;
 }
 
+
+/* arranging navigation menu */
 #header > nav > menu{
     display: flex;
     list-style: none;
+    padding-top: 20px;
 }
 
 #header > nav > menu > li{
-    margin: 0% 10%;
+    font-size: 2em;
 }
 
-#header > nav > menu > li > a {
-    padding: 0% 10%;
+#header > nav > menu > li:nth-child(2) > a {
+    padding: 0% 130%;
+    color: black;
+}
+#header > nav > menu > li:nth-child(3) > a{
+    padding-left: 255%;
+    color: black;
 }
 
 /* coverting cursor into pointer so that user can see the link */
@@ -73,8 +81,9 @@ body{
     cursor: pointer;
 }
 
-.mainleft-section >p {
+.mainleft-section >p:nth-child(1) {
     padding-top: 150px;
+    font-size: 10em;
 }
 
 

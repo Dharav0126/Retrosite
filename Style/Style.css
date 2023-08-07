@@ -1,18 +1,55 @@
-#header{
-    position: fixed;
+/* making the header fixed while scrolling */
+body{
+    margin: 0px;
 }
 
-#header > header > div > a > img{
+/* editing the layout of header */
+#header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    margin-top: -13%;
+    background-color: #f8f8f8;
+}
+
+#header>div{
+    padding-right: 28em;
+}
+
+/* changing the logo size */
+#header > div > a > img{
     height: 7em;
 }
 
 
-#header > header > nav > menu > li{
+/* arranging navigation menu */
+#header > nav > menu{
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+}
+
+#header > nav > menu > li{
+    font-size: 2em;
+}
+
+#header > nav > menu > li:nth-child(2) > a {
+    padding: 0% 130%;
+    color: black;
+}
+#header > nav > menu > li:nth-child(3) > a{
+    padding-left: 255%;
+    color: black;
+}
+
+/* coverting cursor into pointer so that user can see the link */
+#header > nav > menu > li{
     cursor: pointer;
 }
 
 
 
+/* styling pop out form */
 #form
 {
     position: fixed;
@@ -38,6 +75,16 @@
     color: #f8f8f8;
 }
 
+/*styling close button of form*/
+#closebutton{
+    width: 1em;
+    cursor: pointer;
+}
+
+.mainleft-section >p:nth-child(1) {
+    padding-top: 150px;
+    font-size: 10em;
+}
 
 
 #footer>footer {

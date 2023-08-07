@@ -9,7 +9,6 @@ $(Document).ready(function () {
 // Functions show and hide login and signup form 
 function showLoginForm() {
     document.getElementById('form').style.display = 'flex';
-    
     document.getElementById('subform').style.display = 'flex';
 }
 

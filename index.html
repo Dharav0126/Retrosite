@@ -16,16 +16,33 @@
     <main>
         <div id="form">
             <div id="subform">
-                <div class="closebutton">
+                <section class="hello">
                     <h2>WE'RE ALL EARS</h2>
-                    <img src="./img/close.png" alt="close" id="closebutton" onclick="closeForm()">
+                    <div>
+                        <img src="./img/close.png" alt="close" id="closebutton" onclick="closeForm()">
+                    </div>
+                </section>
+                <div class="form">
+                    <form class="feedbackForm">
+                        <h2>Contact Us</h2>
+                        <div>
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="emailFeedback">Email *</label>
+                            <input type="email" id="emailFeedback" name="emailFeedback" required placeholder="xyz@gmail.com">
+                        </div>
+                        <div>
+                            <label for="Phonenumber">Phonenumber *</label>
+                            <input type="tel" id="Phonenumber" name="Phonenumber" required placeholder="+1 9747267453">
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
-                <form>
-                    
-                </form>
             </div>
         </div>
-        <section class="firstsection">
+        <section class="first-section">
             <div class="mainleft-section">
                 <h1>Introducing the Ultimate Boombox: Unleash the Power of Music On-The-Go!</h1>
             </div>
@@ -33,59 +50,116 @@
                 <img src="./img/boombox.jpg" alt="boombox image">
             </div>
         </section>
-        <div class="heading">
-            <h5>Services</h5>
-            <!-- doing type js reffered by porfolio website showed in class -->
-            <div id="element1"></div>
-            <div id="element2"></div>
-            <div id="element3"></div>
-            <!-- type js use -->
-            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-            <!-- Setup and start animation! -->
-            <script>
-                var typed = new Typed('#element1', {
-                    strings: ['<i>Music Composition</i>', '<i>Music Licensing</i>'],
-                    typeSpeed: 100,
-                });
-                var typed = new Typed('#element2', {
-                    strings: ['<i>Video Composition</i>', '<i>Sound Design</i>'],
-                    typeSpeed: 100,
-                });
-                var typed = new Typed('#element3', {
-                    strings: ['<i>Video Casting</i>'],
-                    typeSpeed: 100,
-                });
-            </script>
-        </div>
-        <section class="secondsection">
+        <section class="image-text">
+            <div class="img1">
+                <figure>
+                    <img src="./img/image1.jpeg" alt="image1" class="sideimages">
+                </figure>
+            </div>
             <div class="1stvideo">
-                
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CdFIKU53KEU"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share &autoplay=1"
-                    allowfullscreen></iframe>
-                
+                <h3 class="heading3">Unrivaled Sound Quality:</h3>
+                <p class="sidetext">Immerse yourself in crystal-clear audio with our state-of-the-art stereo recording,
+                    chromium
+                    tapes, and Dolby noise reduction technology. Experience the rich, deep bass and crisp highs that
+                    will take your music to a whole new level.
+                </p>
             </div>
+        </section>
+        <section class="text-image">
             <div class="2ndvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/a1UYHvA2uoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="heading3">Compact and Portable:</h3>
+                <p class="sidetext">Our BBX boombox is designed with your on-the-go lifestyle in mind. Its compact size
+                    and
+                    lightweight build make it easy to carry and perfect for any adventure, whether you're at the
+                    beach, park, or hosting a backyard party.
+
+                </p>
+            </div>
+            <div class="img2">
+                <figure>
+                    <img src="./img/image2.jpg" alt="image2" class="sideimages">
+                </figure>
             </div>
         </section>
-        <section class="thirdsection">
+        <section class="image-text">
+            </div>
+            <div class="img3">
+                <figure>
+                    <img src="./img/image3.jpg" alt="image3" class="sideimages">
+                </figure>
+            </div>
+
             <div class="3rdvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8yvEYKRF5IA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="4thvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S5Y8tFQ01OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+                <h3 class="heading3">Wireless Connectivity:</h3>
+                <p class="sidetext">Embrace the freedom of wireless music streaming with our built-in Bluetooth
+                    technology. Connect your
+                    smartphone or any compatible device and enjoy seamless playback without the hassle of cables.
+                </p>
+
         </section>
-        <section class="fourthsection">
+        <section class="text-image">
+            <div class="4thvideo">
+                <h3 class="heading3">Removable Speakers:</h3>
+                <p class="sidetext">Take control of your audio experience with our innovative removable speakers. Create
+                    your desired
+                    soundstage by placing the speakers where you want, delivering an immersive and personalized sound
+                    experience.
+                </p>
+            </div>
+            <div class="img4">
+                <figure>
+                    <img src="./img/image4.jpeg" alt="image4" class="sideimages">
+                </figure>
+            </div>
+
+        </section>
+        <section class="image-text">
+            <div class="img5">
+                <figure>
+                    <img src="./img/image5.jpeg" alt="image5" class="sideimages">
+                </figure>
+            </div>
+
             <div class="5thvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5_ncIrrM8S0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="heading3">Versatile Input/Output Options: </h3>
+                <p class="sidetext">Elevate your music game with the incorporation of input and output jacks. Connect
+                    microphones for
+                    karaoke nights, turntables for vinyl enthusiasts, or CD players for your classic collection - the
+                    possibilities are endless.
+                </p>
             </div>
+
+        </section>
+        <section class="text-image">
             <div class="6thvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JgCuZvA6ybw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="heading3">Durable Heavy Metal Casings: </h3>
+                <p class="sidetext"> Our BBX boombox is built to withstand the intensity of booming bass. The heavy
+                    metal casings
+                    efficiently handle vibrations, ensuring durability and long-lasting performance.
+                </p>
             </div>
+            <div class="img6">
+                <figure>
+                    <img src="./img/image6.jpg" alt="image6" class="sideimages">
+                </figure>
+            </div>
+
+        </section>
+        <section class="image-text">
+            <div class="img7">
+                <figure>
+                    <img src="./img/image7.jpg" alt="image7" class="sideimages">
+                </figure>
+            </div>
+
+            <div class="7thvideo">
+                <h3 class="heading3">Classic Design with a Modern Twist: </h3>
+                <p class="sidetext"> Paying homage to the retro boomboxes of the past, our product features a sleek
+                    design available in
+                    timeless black or silver finishes, blending seamlessly with any decor.
+                </p>
+            </div>
+
         </section>
     </main>
     <footer id="footer"></footer>

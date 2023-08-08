@@ -8,7 +8,9 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    margin-top: -11%;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -11%; */
     background-color: #f8f8f8;
 }
 
@@ -23,10 +25,15 @@ body{
 
 
 /* arranging navigation menu */
+#header > nav {
+    flex-grow: 1;
+
+}
 #header > nav > menu{
     display: flex;
     list-style: none;
-    padding-top: 20px;
+    justify-content: space-around;
+    /* padding-top: 20px; */
 }
 
 #header > nav > menu > li{
@@ -34,11 +41,11 @@ body{
 }
 
 #header > nav > menu > li:nth-child(2) > a {
-    padding: 0% 130%;
+    /* padding: 0% 130%; */
     color: black;
 }
 #header > nav > menu > li:nth-child(3) > a{
-    padding-left: 255%;
+    /* padding-left: 255%; */
     color: black;
 }
 
@@ -47,6 +54,53 @@ body{
     cursor: pointer;
 }
 
+/* editing the layout of header */
+#aboutheader{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -100px;
+    background-color: #f8f8f8;
+}
+
+main.aboutMain
+{
+    margin-top: 100px;
+}
+
+/* changing the logo size */
+#aboutheader > div > a > img{
+    height: 7em;
+}
+
+#aboutheader > nav{
+ flex-grow: 1;
+}
+
+/* arranging navigation menu */
+#aboutheader > nav > menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#aboutheader > nav > menu > li{
+    font-size: 2em;
+}
+
+#aboutheader > nav > menu > li:nth-child(2) > a {
+    color: black;
+}
+#aboutheader > nav > menu > li:nth-child(3) > a{
+    color: black;
+}
+
+/* coverting cursor into pointer so that user can see the link */
+#aboutheader > nav > menu > li{
+    cursor: pointer;
+}
 
 
 /* styling pop out form */
@@ -64,13 +118,16 @@ body{
 #subform 
 {
     position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 100px 0;
     background-color: #000000;
     padding: 20px;
     border-radius: 5px;
     z-index: 101;
     width: 380px;
-    height: 100px;
+    height: 280px;
     display: none;
     color: #f8f8f8;
 }
@@ -79,23 +136,83 @@ body{
 #closebutton{
     width: 1em;
     cursor: pointer;
+    height: 1em;
 }
 
+/* arranging the close button and text */
+.hello{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.feedbackForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbackForm > div 
+{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.feedbackForm > button 
+{
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
 /* Styling the first text section */
 .mainleft-section >h1{
     padding-top: 125px;
     font-size: 10em;
+    margin: 0px;
 }
 
 /* styling image below the text */
 .mainright-section > img{
-    width: 77em;
+    height: 31em;
+    width: 100%;
 }
+
+/* styling the text-image class */
+.text-image{
+    display: flex;
+    padding: 10px;
+}
+
+/* styling image-text class */
+.image-text{
+    display: flex;
+    padding: 10px;
+}
+
+/* styling all sideimages */
+.sideimages{
+    width: 35em;
+    height: 30em;
+}
+
+/* editing the sidetext class */
+.sidetext{
+    font-size: 2em;
+}
+
+/* styling the h3 tag */
+.heading3{
+    font-size: 3em;
+}
+
+
 
 #footer>footer {
     background-color: #000;
     display: flex;
-    margin: 5% 0%;
+    margin-top: 5%;
 }
 
 #footer>footer>div {
@@ -126,4 +243,94 @@ body{
     height: 2em;
     margin: 0 4px;
     width: auto;
+}
+
+#aboutbody{
+    background-color: rgb(203, 203, 189);
+}
+
+.about > h1{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.aboutcontent{
+    font-size: 1.5em;
+}
+
+.aboutheading{
+    font-size: 2em;
+}
+
+@media only screen and (max-width:1440px) 
+{
+
+}
+@media only screen and (max-width: 1280px)  
+{
+    .mainleft-section >h1 {
+        font-size: 6em;
+    }
+}
+@media only screen and (max-width: 1024px)  
+{
+    .image-text,
+    .text-image 
+    {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    #header>div{
+        padding-right: 12em;
+    }
+}
+@media only screen and (max-width:769px)  
+{
+    #header>div{
+        padding-right: 2em;
+    }
+    .mainleft-section >h1 {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 640px) 
+{
+    #header>div{
+        padding-right: 0em;
+    }
+    #header > nav > menu > li {
+        cursor: pointer;
+        font-size: 2em;
+    }
+    #footer > footer 
+    {
+        flex-direction: column;
+    }
+    #aboutheader > nav > menu > li
+    {
+        font-size: 1.2em;
+    }
+    
+}
+@media only screen and (max-width: 446px) 
+{
+    #aboutheader > nav > menu > li, 
+    #aboutheader > nav > menu > li, 
+    #header > nav > menu > li 
+    {
+        cursor: pointer;
+        font-size: 1em;
+    }
+   
+}
+@media only screen and (max-width: 376px) 
+{
+   
+}
+@media only screen and (max-width: 320px) 
+{
+    
 }

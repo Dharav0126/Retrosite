@@ -8,7 +8,7 @@ body{
     display: flex;
     position: fixed;
     width: 100%;
-    margin-top: -13%;
+    margin-top: -11%;
     background-color: #f8f8f8;
 }
 
@@ -81,11 +81,16 @@ body{
     cursor: pointer;
 }
 
-.mainleft-section >p:nth-child(1) {
-    padding-top: 150px;
+/* Styling the first text section */
+.mainleft-section >h1{
+    padding-top: 125px;
     font-size: 10em;
 }
 
+/* styling image below the text */
+.mainright-section > img{
+    width: 77em;
+}
 
 #footer>footer {
     background-color: #000;
